@@ -1,0 +1,250 @@
+{
+  "main": {
+    "id": "8f7c4472b88041e0",
+    "type": "split",
+    "children": [
+      {
+        "id": "43283480a3a6614a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f481114cbc08e4e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.6 Ciclos de Referência Podem Vazar Memória.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "15.6 Ciclos de Referência Podem Vazar Memória"
+            },
+            "group": "1c681e01a6db2ccd"
+          },
+          {
+            "id": "6601cc158bf97a02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "articles/Grafos.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Grafos"
+            }
+          }
+        ]
+      },
+      {
+        "id": "88f43dc82ec22bdb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fad5dcd347637f5e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.6 Ciclos de Referência Podem Vazar Memória.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "15.6 Ciclos de Referência Podem Vazar Memória"
+            },
+            "group": "1c681e01a6db2ccd"
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f145155f4f430b31",
+    "type": "split",
+    "children": [
+      {
+        "id": "ec1a9eba8a592203",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c9dd2fd62606435e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byCreatedTimeReverse",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "91de8bf8e3f4e913",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "23ed7b903cdf6141",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "823e5ff8f4fe3698",
+    "type": "split",
+    "children": [
+      {
+        "id": "c3344eafd7eb0c38",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b29c1b5fa09d149",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "RustBook/10 Tipos Genéricos, Traits e Lifetimes/10.3 Validando Referências com Tempos de Vida (Lifetimes).md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for 10.3 Validando Referências com Tempos de Vida (Lifetimes)"
+            }
+          },
+          {
+            "id": "fd5e1ecdfe2a7a0f",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Conceitos Básicos Rust.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Conceitos Básicos Rust"
+            }
+          },
+          {
+            "id": "c56631c75e60506c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "8d506b7ed237fdf9",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.1 Usando Box para apontar para dados na Heap.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de 15.1 Usando Box para apontar para dados na Heap"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "markdown-importer:Abrir importador Markdown": false,
+      "mermaid-tools:Open Mermaid Toolbar": false
+    }
+  },
+  "active": "fad5dcd347637f5e",
+  "lastOpenFiles": [
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.5 RefCell e o Padrão de Mutabilidade Interior.md",
+    "RustBook/5 Structs/5.3 Sintaxe de Métodos em Rust.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.2 Tratando Ponteiros Inteligentes como Referências Regulares com a Trait Deref.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.4 O Ponteiro Inteligente com Contagem de Referências.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.3 Executando Código na Limpeza com a Trait Drop.md",
+    "articles/O Problema da Parada.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.6 Ciclos de Referência Podem Vazar Memória.md",
+    "RustBook/8 Coleções Comuns/8.2 Armazenando Texto Codificado em UTF-8 com Strings.md",
+    "RustBook/6 Enum e Pattern Matching/6.2 O Controle de Fluxo match em Rust.md",
+    "articles/Grafos.md",
+    "articles",
+    "RustBook/O RustBook.md",
+    "RustBook/16 Concorrencia/16.4 Concorrência Extensível com as Traits Sync e Send.md",
+    "RustBook/16 Concorrencia/16.3 Concorrência de Estado Compartilhado.md",
+    "RustBook/16 Concorrencia/16.1 Usando Threads para Executar Código Simultaneamente.md",
+    "RustBook/16 Concorrencia/16.0 Concorrência Destemida.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.1 Usando Box para apontar para dados na Heap.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.0 Ponteiros Inteligentes Smart Pointers.md",
+    "RustBook/14 Mais Sobre Cargo/14.5 Estendendo o Cargo com Comandos Personalizados.md",
+    "RustBook/14 Mais Sobre Cargo/14.4 Instalando Binários com  cargo install.md",
+    "RustBook/14 Mais Sobre Cargo/14.3 Cargo Workspaces.md",
+    "RustBook/14 Mais Sobre Cargo/14.2 Publicando um Crate em Crates.md",
+    "RustBook/14 Mais Sobre Cargo/14.1 Customizando Builds com Perfis de Release.md",
+    "RustBook/14 Mais Sobre Cargo/14.0  Mais Sobre Cargo e Crates.io.md",
+    "RustBook/13 Recursos de Linguagem Funcional Iteradores e Closures/13.4 Comparando Desempenho.md",
+    "RustBook/13 Recursos de Linguagem Funcional Iteradores e Closures/13.3 Melhorando Nosso Projeto de IO.md",
+    "RustBook/13 Recursos de Linguagem Funcional Iteradores e Closures/13.2 Processando uma Série de Itens com Iteradores.md",
+    "Sem título 1.canvas",
+    "Sem título.canvas",
+    "Dominando Templates com Tera em Rust",
+    "Actix-Web/MyProjects",
+    "RustBook/16 Concorrencia/Sem título",
+    "RustBook/16 Concorrencia",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)",
+    "RustBook/14 Mais Sobre Cargo",
+    "RustBook/13 Recursos de Linguagem Funcional Iteradores e Closures/Sem título",
+    "RustBook/13 Recursos de Linguagem Funcional Iteradores e Closures",
+    "RustBook/12 Um Projeto IO",
+    "Untitled.canvas"
+  ]
+}
