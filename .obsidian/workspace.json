@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RustBook/20 Recursos Avançados/20.1 Rust Inseguro.md",
+                "file": "RustBook/20 Recursos Avançados/20.5 Macros.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "20.1 Rust Inseguro"
+              "title": "20.5 Macros"
             }
           }
         ]
@@ -180,8 +180,13 @@
   },
   "active": "b2c7de51948969ac",
   "lastOpenFiles": [
-    "RustBook/20 Recursos Avançados/20.0 Recursos Avançados.md",
+    "RustBook/20 Recursos Avançados/20.4 Funções e Closures Avançadas.md",
+    "RustBook/20 Recursos Avançados/20.5 Macros.md",
+    "RustBook/20 Recursos Avançados/20.3 Tipos Avançados.md",
+    "RustBook/20 Recursos Avançados/20.2 Traits Avançados.md",
+    "README.md",
     "RustBook/20 Recursos Avançados/20.1 Rust Inseguro.md",
+    "RustBook/20 Recursos Avançados/20.0 Recursos Avançados.md",
     "RustBook/19 Padrões e Correspondência/19.3 Sintaxe de Padrões.md",
     "RustBook/20 Recursos Avançados",
     "RustBook/19 Padrões e Correspondência/19.2 Refutabilidade Se um Padrão Pode Falhar na Correspondência.md",
@@ -206,11 +211,6 @@
     "RustBook/17  Async e Await",
     "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.5 RefCell e o Padrão de Mutabilidade Interior.md",
     "RustBook/O RustBook.md",
-    "Prototype Social Media/Layered Architecture.md",
-    "README.md",
-    "RustBook/5 Structs/5.3 Sintaxe de Métodos em Rust.md",
-    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.2 Tratando Ponteiros Inteligentes como Referências Regulares com a Trait Deref.md",
-    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.4 O Ponteiro Inteligente com Contagem de Referências.md",
     "articles",
     "Sem título 1.canvas",
     "Sem título.canvas",
