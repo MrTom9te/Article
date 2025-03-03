@@ -1,278 +1,84 @@
-# Diagramas em Texto em Artigos Técnicos: Uma Abordagem Prática
+# 1.0 Introdução
 
-Os diagramas são fundamentais para explicar conceitos técnicos complexos, mas nem sempre podemos usar ferramentas gráficas. Este artigo explora técnicas para criar diagramas eficazes usando apenas texto plano, uma habilidade valiosa para documentação em Markdown, comentários de código, ou qualquer ambiente onde ferramentas gráficas não estão disponíveis.
+> Nota: Esta edição do livro é a mesma que "The Rust Programming Language" disponível em formato impresso e ebook pela No Starch Press.
 
-## Por que usar diagramas em texto?
+Bem-vindo a _A Linguagem de Programação Rust_, um livro introdutório sobre Rust. A linguagem de programação Rust ajuda você a escrever software mais rápido e confiável. Alta ergonomia e controle de baixo nível frequentemente estão em conflito no design de linguagens de programação; Rust desafia esse conflito. Através do equilíbrio entre poderosa capacidade técnica e uma ótima experiência de desenvolvedor, Rust dá a você a opção de controlar detalhes de baixo nível (como uso de memória) sem todas as dificuldades tradicionalmente associadas a tal controle.
 
-- **Portabilidade**: Funciona em qualquer editor de texto
-- **Controle de versão**: Pode ser versionado facilmente com git
-- **Acessibilidade**: Pode ser lido por leitores de tela
-- **Simplicidade**: Não requer ferramentas especiais
+## Para Quem o Rust É Indicado
 
-## Tipos de Diagramas de Texto
+Rust é ideal para muitas pessoas por diversas razões. Vamos examinar alguns dos grupos mais importantes.
 
-### 1. Diagramas de caixa simples
+### Equipes de Desenvolvedores
 
-O tipo mais básico de diagrama utiliza caracteres ASCII para criar caixas e conexões:
+Rust está se mostrando uma ferramenta produtiva para colaboração entre grandes equipes de desenvolvedores com níveis variados de conhecimento em programação de sistemas. Código de baixo nível é propenso a vários bugs sutis, que na maioria das outras linguagens só podem ser detectados através de testes extensivos e revisão cuidadosa de código por desenvolvedores experientes. Em Rust, o compilador desempenha o papel de guardião, recusando-se a compilar código com esses bugs elusivos, incluindo bugs de concorrência. Ao trabalhar junto com o compilador, a equipe pode dedicar seu tempo focando na lógica do programa em vez de caçar bugs.
 
-```
-+-------------+         +-------------+
-|  Componente |-------->| Componente  |
-|     A       |         |     B       |
-+-------------+         +-------------+
-        |                      |
-        |                      |
-        v                      v
-+-------------+         +-------------+
-|  Componente |<--------| Componente  |
-|     C       |         |     D       |
-+-------------+         +-------------+
-```
+Rust também traz ferramentas contemporâneas de desenvolvimento para o mundo da programação de sistemas:
+- Cargo, o gerenciador de dependências e ferramenta de build incluída, torna a adição, compilação e gerenciamento de dependências indolor e consistente em todo o ecossistema Rust.
+- A ferramenta de formatação Rustfmt garante um estilo de codificação consistente entre desenvolvedores.
+- O rust-analyzer potencializa a integração com Ambientes de Desenvolvimento Integrado (IDEs) para autocompletar código e exibir mensagens de erro inline.
 
-Este tipo de diagrama é ideal para mostrar:
-- Fluxos de trabalho simples
-- Hierarquias básicas
-- Relacionamentos entre componentes
+Usando estas e outras ferramentas no ecossistema Rust, os desenvolvedores podem ser produtivos enquanto escrevem código de nível de sistema.
 
-### 2. Diagramas de Fluxo
+### Estudantes
 
-Para representar fluxos de decisão, podemos usar este formato:
+Rust é para estudantes e aqueles que estão interessados em aprender sobre conceitos de sistemas. Usando Rust, muitas pessoas aprenderam sobre tópicos como desenvolvimento de sistemas operacionais. A comunidade é muito acolhedora e feliz em responder perguntas de estudantes. Através de esforços como este livro, as equipes do Rust querem tornar os conceitos de sistemas mais acessíveis para mais pessoas, especialmente aquelas novas em programação.
 
-```
-           +-------------+
-           |   Início    |
-           +-------------+
-                  |
-                  v
-           +-------------+
-           |  Condição?  |
-           +-------------+
-                  |
-          +-------+-------+
-          |               |
-          v               v
-  +-------------+  +-------------+
-  |     Sim     |  |     Não     |
-  +-------------+  +-------------+
-          |               |
-          v               v
-  +-------------+  +-------------+
-  |  Processo A |  |  Processo B |
-  +-------------+  +-------------+
-          |               |
-          +-------+-------+
-                  |
-                  v
-           +-------------+
-           |     Fim     |
-           +-------------+
-```
+### Empresas
 
-### 3. Diagramas de Arquitetura
+Centenas de empresas, grandes e pequenas, usam Rust em produção para uma variedade de tarefas, incluindo ferramentas de linha de comando, serviços web, ferramentas de DevOps, dispositivos embarcados, análise e transcodificação de áudio e vídeo, criptomoedas, bioinformática, motores de busca, aplicações de Internet das Coisas, aprendizado de máquina e até mesmo partes importantes do navegador web Firefox.
 
-Para arquiteturas de sistemas, podemos usar um formato mais elaborado:
+### Desenvolvedores de Código Aberto
 
-```
-                  Sistema
-  +-------------------------------------+
-  |                                     |
-  |    +------------+   +------------+  |
-  |    |            |   |            |  |
-  |    | Frontend   |<->| API        |  |
-  |    |            |   | Gateway    |  |
-  |    +------------+   +------------+  |
-  |            ^             ^          |
-  |            |             |          |
-  |            v             v          |
-  |    +------------+   +------------+  |
-  |    |            |   |            |  |
-  |    | Serviço A  |<->| Serviço B  |  |
-  |    |            |   |            |  |
-  |    +------------+   +------------+  |
-  |            ^             ^          |
-  |            |             |          |
-  |            v             v          |
-  |    +------------------------------+  |
-  |    |                              |  |
-  |    |          Banco de            |  |
-  |    |           Dados              |  |
-  |    |                              |  |
-  |    +------------------------------+  |
-  |                                     |
-  +-------------------------------------+
-```
+Rust é para pessoas que querem construir a linguagem de programação Rust, comunidade, ferramentas de desenvolvimento e bibliotecas. Adoraríamos que você contribuísse para a linguagem Rust.
 
-### 4. Notação para Algoritmos e Estruturas de Dados
+### Pessoas que Valorizam Velocidade e Estabilidade
 
-Para representar estruturas de dados como árvores ou grafos:
+Rust é para pessoas que desejam velocidade e estabilidade em uma linguagem. Por velocidade, queremos dizer tanto quão rapidamente o código Rust pode ser executado quanto a velocidade com que Rust permite que você escreva programas. As verificações do compilador Rust garantem estabilidade através de adições de recursos e refatoração. Isto contrasta com o código legado frágil em linguagens sem essas verificações, que os desenvolvedores frequentemente têm medo de modificar. Ao buscar abstrações de custo zero, recursos de alto nível que compilam para código de baixo nível tão rápido quanto código escrito manualmente, Rust se esforça para fazer com que código seguro também seja código rápido.
 
-```
-       Árvore Binária
-          
-           [10]
-           /  \
-        [5]    [15]
-        / \     / \
-     [3]  [7] [12] [18]
-```
+A linguagem Rust espera apoiar muitos outros usuários também; os mencionados aqui são meramente alguns dos maiores interessados. No geral, a maior ambição do Rust é eliminar as compensações que os programadores aceitaram por décadas, fornecendo segurança _e_ produtividade, velocidade _e_ ergonomia. Experimente Rust e veja se suas escolhas funcionam para você.
 
-Ou para listas encadeadas:
+## Para Quem Este Livro É Destinado
 
-```
-Lista Encadeada
-  
-  +------+    +------+    +------+    +------+
-  | 1 |  |--->| 2 |  |--->| 3 |  |--->| 4 |/|
-  +------+    +------+    +------+    +------+
-```
+Este livro assume que você já escreveu código em outra linguagem de programação, mas não faz suposições sobre qual. Tentamos tornar o material amplamente acessível para aqueles de uma ampla variedade de origens de programação. Não gastamos muito tempo falando sobre o que programação _é_ ou como pensar sobre isso. Se você é completamente novo em programação, seria melhor ler um livro que especificamente forneça uma introdução à programação.
 
-## Técnicas Avançadas
+## Como Usar Este Livro
 
-### Uso de Caracteres Unicode
+Em geral, este livro assume que você está lendo-o em sequência do início ao fim. Capítulos posteriores se baseiam em conceitos de capítulos anteriores, e capítulos anteriores podem não se aprofundar em detalhes sobre um tópico específico, mas revisitarão o tópico em um capítulo posterior.
 
-Podemos aprimorar nossos diagramas com caracteres Unicode:
+Você encontrará dois tipos de capítulos neste livro: capítulos de conceito e capítulos de projeto. Em capítulos de conceito, você aprenderá sobre um aspecto do Rust. Em capítulos de projeto, construiremos pequenos programas juntos, aplicando o que você aprendeu até agora. Os capítulos 2, 12 e 21 são capítulos de projeto; o resto são capítulos de conceito.
 
-```
-┌─────────────┐      ┌─────────────┐
-│ Componente  │──────► Componente  │
-│     A       │      │     B       │
-└─────────────┘      └─────────────┘
-       │                    │
-       │                    │
-       ▼                    ▼
-┌─────────────┐      ┌─────────────┐
-│ Componente  │◄─────┤ Componente  │
-│     C       │      │     D       │
-└─────────────┘      └─────────────┘
-```
+O Capítulo 1 explica como instalar Rust, como escrever um programa "Olá, mundo!" e como usar o Cargo, o gerenciador de pacotes e ferramenta de build do Rust. O Capítulo 2 é uma introdução prática à escrita de um programa em Rust, fazendo você construir um jogo de adivinhação de números. Aqui cobrimos conceitos em alto nível, e capítulos posteriores fornecerão detalhes adicionais. Se você quer colocar a mão na massa imediatamente, o Capítulo 2 é o lugar para isso. O Capítulo 3 cobre recursos do Rust que são semelhantes aos de outras linguagens de programação, e no Capítulo 4 você aprenderá sobre o sistema de ownership do Rust. Se você é um aprendiz particularmente meticuloso que prefere aprender cada detalhe antes de seguir em frente, talvez queira pular o Capítulo 2 e ir direto para o Capítulo 3, retornando ao Capítulo 2 quando quiser trabalhar em um projeto aplicando os detalhes que aprendeu.
 
-Este formato é mais limpo e profissional, mas pode ter problemas de compatibilidade em alguns ambientes.
+O Capítulo 5 discute structs e métodos, e o Capítulo 6 aborda enums, expressões `match` e a construção de controle de fluxo `if let`. Você usará structs e enums para criar tipos personalizados em Rust.
 
-### Diagrama de Sequência
+No Capítulo 7, você aprenderá sobre o sistema de módulos do Rust e sobre as regras de privacidade para organizar seu código e sua Interface de Programação de Aplicativos (API) pública. O Capítulo 8 discute algumas estruturas de dados de coleção comuns que a biblioteca padrão fornece, como vetores, strings e hash maps. O Capítulo 9 explora a filosofia e técnicas de tratamento de erros do Rust.
 
-Para representar interações temporais:
+O Capítulo 10 se aprofunda em generics, traits e lifetimes, que lhe dão o poder de definir código que se aplica a múltiplos tipos. O Capítulo 11 é todo sobre testes, que mesmo com as garantias de segurança do Rust são necessários para garantir que a lógica do seu programa esteja correta. No Capítulo 12, construiremos nossa própria implementação de um subconjunto de funcionalidades da ferramenta de linha de comando `grep`, que busca texto dentro de arquivos. Para isso, usaremos muitos dos conceitos que discutimos nos capítulos anteriores.
 
-```
-   Cliente          Servidor          Banco de Dados
-      │                │                    │
-      │ Requisição     │                    │
-      │───────────────►│                    │
-      │                │                    │
-      │                │  Consulta          │
-      │                │───────────────────►│
-      │                │                    │
-      │                │  Resultado         │
-      │                │◄───────────────────│
-      │                │                    │
-      │ Resposta       │                    │
-      │◄───────────────│                    │
-      │                │                    │
-```
+O Capítulo 13 explora closures e iteradores: recursos do Rust que vêm de linguagens de programação funcional. No Capítulo 14, examinaremos o Cargo com mais profundidade e falaremos sobre as melhores práticas para compartilhar suas bibliotecas com outros. O Capítulo 15 discute ponteiros inteligentes que a biblioteca padrão fornece e os traits que permitem sua funcionalidade.
 
-### Representação de Estado
+No Capítulo 16, percorreremos diferentes modelos de programação concorrente e falaremos sobre como o Rust ajuda você a programar em múltiplas threads sem medo. No Capítulo 17, construiremos sobre isso explorando a sintaxe async e await do Rust e o modelo de concorrência leve que eles suportam.
 
-Para máquinas de estado ou fluxos de trabalho:
+O Capítulo 18 examina como os idiomas do Rust se comparam aos princípios de programação orientada a objetos com os quais você pode estar familiarizado.
 
-```
-┌─────────────┐     ┌─────────────┐
-│             │     │             │
-│   Pendente  │────►│ Em Processo │
-│             │     │             │
-└─────────────┘     └─────────────┘
-       ▲                   │
-       │                   │
-       │                   ▼
-┌─────────────┐     ┌─────────────┐
-│             │     │             │
-│  Cancelado  │◄────│  Concluído  │
-│             │     │             │
-└─────────────┘     └─────────────┘
-```
+O Capítulo 19 é uma referência sobre padrões e pattern matching, que são maneiras poderosas de expressar ideias em programas Rust. O Capítulo 20 contém uma variedade de tópicos avançados de interesse, incluindo Rust inseguro, macros e mais sobre lifetimes, traits, tipos, funções e closures.
 
-## Ferramentas e Padrões
+No Capítulo 21, completaremos um projeto no qual implementaremos um servidor web multithread de baixo nível!
 
-### ASCII/Unicode Nativo
+Finalmente, alguns apêndices contêm informações úteis sobre a linguagem em um formato mais parecido com uma referência. O Apêndice A aborda as palavras-chave do Rust, o Apêndice B aborda os operadores e símbolos do Rust, o Apêndice C aborda traits deriváveis fornecidos pela biblioteca padrão, o Apêndice D aborda algumas ferramentas de desenvolvimento úteis e o Apêndice E explica as edições do Rust. No Apêndice F, você pode encontrar traduções do livro, e no Apêndice G abordaremos como o Rust é feito e o que é o Rust nightly.
 
-O método mais simples é usar caracteres ASCII diretamente no editor:
-- Vantagens: Funciona em qualquer lugar
-- Desvantagens: Trabalhoso para criar e manter
+Não há maneira errada de ler este livro: se você quiser pular adiante, vá em frente! Talvez você precise voltar a capítulos anteriores se sentir alguma confusão. Mas faça o que funcionar para você.
 
-### Linguagens de Definição de Diagramas
+Uma parte importante do processo de aprendizado do Rust é aprender a ler as mensagens de erro que o compilador exibe: elas irão guiá-lo em direção ao código funcional. Como tal, forneceremos muitos exemplos que não compilam junto com a mensagem de erro que o compilador mostrará a você em cada situação. Saiba que se você inserir e executar um exemplo aleatório, ele pode não compilar! Certifique-se de ler o texto ao redor para ver se o exemplo que você está tentando executar destina-se a dar erro. Ferris também ajudará você a distinguir código que não deve funcionar:
 
-Existem linguagens especializadas que geram diagramas a partir de descrições textuais:
+| Ferris | Significado                                      |
+| ------ | ------------------------------------------------ |
+| 🦀     | Este código não compila!                         |
+| 💥     | Este código entra em pânico!                     |
+| ❌      | Este código não produz o comportamento desejado. |
 
-#### ASCII Flow
+Na maioria das situações, levaremos você à versão correta de qualquer código que não compile.
 
-Uma notação simples:
+## Código-Fonte
 
-```
-+--------+   +-------+    +-------+
-|        | --+ ditaa +--> |       |
-|  Text  |   +-------+    |Diagram|
-|Document|   |!magic!|    |       |
-|     {d}|   |       |    |       |
-+---+----+   +-------+    +-------+
-    :                         ^
-    |       Lots of work      |
-    +-------------------------+
-```
-
-#### Mermaid
-
-Mermaid é uma linguagem para gerar diagramas que pode ser interpretada por várias ferramentas:
-
-```
-graph TD
-    A[Cliente] --> B[API Gateway]
-    B --> C[Serviço A]
-    B --> D[Serviço B]
-    C --> E[Banco de Dados]
-    D --> E
-```
-
-Quando processado, o código acima gera um diagrama visual. Muitas plataformas como GitHub já suportam Mermaid nativamente.
-
-#### PlantUML
-
-PlantUML é outra linguagem popular:
-
-```
-@startuml
-actor Cliente
-participant "API Gateway" as API
-database "Banco de Dados" as DB
-
-Cliente -> API: Requisição
-API -> DB: Consulta
-DB --> API: Resposta
-API --> Cliente: Resultado
-@enduml
-```
-
-## Boas Práticas
-
-### 1. Mantenha a simplicidade
-- Use diagramas apenas quando necessário
-- Exiba apenas informações relevantes
-- Evite diagramas muito grandes ou complexos
-
-### 2. Consistência
-- Use símbolos consistentes para os mesmos tipos de elementos
-- Mantenha o estilo visual uniforme
-- Documente a legenda quando usar símbolos menos comuns
-
-### 3. Contexto
-- Sempre forneça texto explicativo ao redor do diagrama
-- Explique o propósito e como interpretar
-- Referencie o diagrama no texto
-
-### 4. Manutenibilidade
-- Comente seções do diagrama para facilitar futuras edições
-- Armazene em arquivos separados os diagramas muito complexos
-- Use ferramentas de geração automática quando possível
-
-## Conclusão
-
-Diagramas em texto são ferramentas poderosas para comunicação técnica, especialmente em ambientes onde ferramentas visuais não estão disponíveis. Embora possam parecer primitivos em comparação com diagramas visuais sofisticados, eles oferecem vantagens significativas em termos de portabilidade, versionamento e acessibilidade.
-
-A escolha entre ASCII puro, caracteres Unicode ou linguagens de descrição como Mermaid ou PlantUML dependerá do seu ambiente específico e das necessidades do seu projeto. Independentemente da abordagem escolhida, um bom diagrama textual pode comunicar conceitos complexos de forma clara e eficaz.
+Os arquivos-fonte a partir dos quais este livro é gerado podem ser encontrados no GitHub.
