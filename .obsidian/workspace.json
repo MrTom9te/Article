@@ -4,20 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "3b6a3596ccbe9579",
+        "id": "db763e56d637b734",
         "type": "tabs",
         "children": [
           {
-            "id": "5e2900958ca93e0b",
+            "id": "b1b65cf8a3c275bd",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "RustBook/17  Async e Await/17.3 Trabalhando com Qualquer Número de Futures.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "17.3 Trabalhando com Qualquer Número de Futures"
+            }
+          },
+          {
+            "id": "328a6e1994572b50",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "RustBook/17  Async e Await/17.4 Streams Futures em Sequência.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "17.4 Streams Futures em Sequência"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -74,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "823e5ff8f4fe3698",
@@ -174,46 +194,46 @@
       "markdown-importer:Abrir importador Markdown": false
     }
   },
-  "active": "5e2900958ca93e0b",
+  "active": "328a6e1994572b50",
   "lastOpenFiles": [
-    "README.md",
-    "RustBook/O RustBook.md",
-    "RustBook/20 Recursos Avançados/20.5 Macros.md",
-    "RustBook/20 Recursos Avançados/20.4 Funções e Closures Avançadas.md",
-    "RustBook/20 Recursos Avançados/20.3 Tipos Avançados.md",
-    "RustBook/20 Recursos Avançados/20.2 Traits Avançados.md",
-    "RustBook/20 Recursos Avançados/20.1 Rust Inseguro.md",
-    "RustBook/20 Recursos Avançados/20.0 Recursos Avançados.md",
-    "RustBook/19 Padrões e Correspondência/19.3 Sintaxe de Padrões.md",
-    "RustBook/20 Recursos Avançados",
-    "RustBook/19 Padrões e Correspondência/19.2 Refutabilidade Se um Padrão Pode Falhar na Correspondência.md",
-    "RustBook/19 Padrões e Correspondência/Sem título",
-    "RustBook/19 Padrões e Correspondência/19.1 Todos os Lugares Onde Padrões Podem Ser Usados.md",
-    "RustBook/19 Padrões e Correspondência/19.0 Padrões e Correspondência.md",
-    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.3 Implementando um Padrão de Design Orientado a Objetos.md",
-    "RustBook/19 Padrões e Correspondência",
-    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.2 Usando Objetos Trait para Permitir Valores de Diferentes Tipos.md",
-    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.1 Características de Linguagens Orientadas a Objetos.md",
-    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.0 Características de Programação Orientada a Objetos em Rust.md",
-    "RustBook/17  Async e Await/17.6 Juntando Tudo.md",
-    "RustBook/18 Características de Programação Orientada a Objetos em Rust",
-    "RustBook/17  Async e Await/17.5 Um Olhar Mais Detalhado Sobre as Traits para Programação Assíncrona.md",
-    "RustBook/17  Async e Await/17.4 Streams Futures em Sequência.md",
     "RustBook/17  Async e Await/17.3 Trabalhando com Qualquer Número de Futures.md",
     "RustBook/17  Async e Await/17.2 Aplicando Concorrência com Async.md",
+    "RustBook/6 Enum e Pattern Matching/6.3 Fluxo de Controle Conciso com `if let`.md",
     "RustBook/17  Async e Await/17.1 Futures e a Sintaxe Async.md",
-    "RustBook/16 Concorrencia/16.1 Usando Threads para Executar Código Simultaneamente.md",
     "RustBook/17  Async e Await/17.0 Fundamentos de Programação Assíncrona Async, Await, Futures e Streams.md",
-    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.6 Ciclos de Referência Podem Vazar Memória.md",
-    "RustBook/17  Async e Await",
+    "RustBook/16 Concorrencia/16.0 Concorrência Destemida.md",
+    "RustBook/16 Concorrencia/16.4 Concorrência Extensível com as Traits Sync e Send.md",
+    "Articles/Cargo Workspaces.md",
+    "Articles/Licenças de Software.md",
+    "Articles/O Problema da Parada.md",
+    "Articles/Arena Allocation em Rust.md",
+    "RustBook/16 Concorrencia/16.3 Concorrência de Estado Compartilhado.md",
     "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.5 RefCell e o Padrão de Mutabilidade Interior.md",
-    "articles",
+    "Articles/Implementando JSON Web Token do Zero.md",
+    "Articles/Strings no Padrão C e C++.md",
+    "Articles/Grafos.md",
+    "RustBook/19 Padrões e Correspondência/19.0 Padrões e Correspondência.md",
+    "RustBook/19 Padrões e Correspondência/19.1 Todos os Lugares Onde Padrões Podem Ser Usados.md",
+    "RustBook/14 Mais Sobre Cargo/14.3 Cargo Workspaces.md",
+    "RustBook/16 Concorrencia/16.2 Usando Passagem de Mensagens para Transferir Dados Entre Threads.md",
+    "RustBook/16 Concorrencia/16.1 Usando Threads para Executar Código Simultaneamente.md",
+    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.6 Ciclos de Referência Podem Vazar Memória.md",
+    "Actix-Web/1 Fundamentos",
+    "Actix-Web/Sem título.md",
+    "RustBook/O RustBook.md",
+    "README.md",
+    "RustBook/20 Recursos Avançados/20.5 Macros.md",
+    "RustBook/20 Recursos Avançados",
+    "RustBook/19 Padrões e Correspondência/Sem título",
+    "RustBook/19 Padrões e Correspondência",
+    "RustBook/18 Características de Programação Orientada a Objetos em Rust",
+    "RustBook/17  Async e Await",
+    "Articles",
     "Sem título 1.canvas",
     "Sem título.canvas",
     "Dominando Templates com Tera em Rust",
     "Actix-Web/MyProjects",
     "RustBook/16 Concorrencia/Sem título",
-    "RustBook/16 Concorrencia",
     "Untitled.canvas"
   ]
 }
