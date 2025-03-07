@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "RustBook/17  Async e Await/17.5 Um Olhar Mais Detalhado Sobre as Traits para Programação Assíncrona.md",
+                "file": "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.3 Implementando um Padrão de Design Orientado a Objetos.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "17.5 Um Olhar Mais Detalhado Sobre as Traits para Programação Assíncrona"
+              "title": "18.3 Implementando um Padrão de Design Orientado a Objetos"
             }
           }
         ],
@@ -210,6 +210,11 @@
   },
   "active": "d3c822591c5625c1",
   "lastOpenFiles": [
+    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.2 Usando Objetos Trait para Permitir Valores de Diferentes Tipos.md",
+    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.1 Características de Linguagens Orientadas a Objetos.md",
+    "RustBook/18 Características de Programação Orientada a Objetos em Rust/18.0 Características de Programação Orientada a Objetos em Rust.md",
+    "RustBook/17  Async e Await/17.6 Juntando Tudo.md",
+    "RustBook/17  Async e Await/17.5 Um Olhar Mais Detalhado Sobre as Traits para Programação Assíncrona.md",
     "RustBook/17  Async e Await/17.4 Streams Futures em Sequência.md",
     "RustBook/17  Async e Await/17.3 Trabalhando com Qualquer Número de Futures.md",
     "RustBook/17  Async e Await/17.2 Aplicando Concorrência com Async.md",
@@ -231,12 +236,7 @@
     "RustBook/19 Padrões e Correspondência/19.1 Todos os Lugares Onde Padrões Podem Ser Usados.md",
     "RustBook/14 Mais Sobre Cargo/14.3 Cargo Workspaces.md",
     "RustBook/16 Concorrencia/16.2 Usando Passagem de Mensagens para Transferir Dados Entre Threads.md",
-    "RustBook/16 Concorrencia/16.1 Usando Threads para Executar Código Simultaneamente.md",
-    "RustBook/15 Ponteiros Inteligentes (Smart Pointers)/15.6 Ciclos de Referência Podem Vazar Memória.md",
     "Actix-Web/1 Fundamentos",
-    "Actix-Web/Sem título.md",
-    "RustBook/O RustBook.md",
-    "README.md",
     "RustBook/20 Recursos Avançados",
     "RustBook/19 Padrões e Correspondência/Sem título",
     "RustBook/19 Padrões e Correspondência",
